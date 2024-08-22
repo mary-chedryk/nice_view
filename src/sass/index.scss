@@ -1,2 +1,18 @@
 @import './common';
 @import './example';
+
+@import 'base/container';
+@import 'base/reset';
+@import 'base/fonts';
+
+@import 'utils/variables';
+@import 'utils/placeholdres';
+
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/philosophy';
+@import 'layout/apartment';
+@import 'layout/infrastructure';
+@import 'layout/gallery';
+@import 'layout/contact';
+@import 'layout/footer';
