@@ -1,224 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Nice View</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nice View</title>
+  <link rel="stylesheet" href="sass/index.scss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
-  </head>
+</head>
 
-  <body>
-    <header class="header">
-      <a href="#" class="logo"></a>
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Apartments</a></li>
-          <li class="nav-item"><a href="#">Infrastructure</a></li>
-          <li class="nav-item"><a href="#">Gallery</a></li>
-          <li class="nav-item"><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+<body>
+  <!-- <header class="header">
+    <a href="#" class="logo"></a>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Apartments</a></li>
+        <li class="nav-item"><a href="#">Infrastructure</a></li>
+        <li class="nav-item"><a href="#">Gallery</a></li>
+        <li class="nav-item"><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
 
-      <include src="./partials/example.html"></include>
+    <include src="./partials/example.html"></include>
 
-      <section class="hero">
-        <h1 class="hero-title">Nice view</h1>
-        <p class="hero-text">For your comfortable life with your family</p>
-        <button class="hero-btn">Contact us</button>
-      </section>
-      <section class="philosophy">
-        <ul class="philosophy-card-list">
-          <li class="philosophy-card-item">
+    <section class="hero">
+      <h1 class="hero-title">Nice view</h1>
+      <p class="hero-text">For your comfortable life with your family</p>
+      <button class="hero-btn">Contact us</button>
+    </section> -->
+
+  <div class="philosophy-box1"></div>
+  <section class="philosophy">
+    <div class="philosophy-box2">
+      <ul class="philosophy-card-list">
+        <div>
+          <li class="philosophy-card-item philosophy-card1">
             <svg class="philosophy-icon">
-
-       
-
               <use href="img/symbol-defs.svg#icon-Vector"> </use>
-
             </svg>
             <p class="philosophy-card-text">15 years of experience</p>
           </li>
+          <li class="philosophy-card-item philosophy-card1">
+            <svg class="philosophy-icon">
+              <use href="img/symbol-defs.svg#icon-home"></use>
+            </svg>
+            <p class="philosophy-card-text">22 houses built</p>
+          </li>
+        </div>
+        <div>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
-              <use href="img/symbol-defs.svg#iconoirgraph"></use>
-
+              <use href="img/symbol-defs.svg#icon-iconoirgraph"></use>
             </svg>
             <p class="philosophy-card-text">30 thousand happy residents</p>
           </li>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
-              <use href="img/symbol-defs.svg#icon-home"></use>
-
-            </svg>
-            <p class="philosophy-card-text">22 houses built</p>
-          </li>
-          <li class="philosophy-card-item">
-            <svg class="philosophy-icon">
-
               <use href="img/symbol-defs.svg#icon-Frame"></use>
-
             </svg>
             <p class="philosophy-card-text">9 awards</p>
           </li>
-        </ul>
+        </div>
+      </ul>
+      <div>
         <h2 class="philosophy-title">Philosophy of our company</h2>
         <p class="philosophy-text">
           Residential complex “Nice view” is an island of tranquility, security
           and comfort. In our project, we created the opportunity to lead a
           measured life in the very center of the city.
         </p>
-      </section>
-      <section class="apartment">
-        <h2 class="apartment">Choose your apartment</h2>
-        <ul class="apartment-card-list">
-          <li class="apartment-card-item">
-            <picture>
-            <source srcset="./images/mobile-img/apartment1.webp 1x,  ./images/mobile-img/apartment1.webp 2x" media="(min-width: 360px)" />
-            <source srcset="./images/mobile-img/apartment1.webp 1x, ./images/mobile-img/apartment1.webp 2x" media="(min-width: 768px)" />
-            <source srcset="./images/mobile-img/apartment1.webp 1x, ./images/mobile-img/apartment1.webp 2x" media="(min-width: 1200px)" />
-            <img class="apartment-img" src="./images/mobile-img/apartment1.webp" alt="" width="" height="">
-          </picture>
-            <h3 class="apartment-card-title">Type 1</h3>
-            <p class="apartment-card-text">total area 23 meters</p>
+      </div>
+    </div>
+    </p>
+    </div>
+  </section>
+  <div class="philosophy-box1"></div>
+  <section class="apartment container">
+    <h2 class="apartment-title">Choose your apartment</h2>
+    <ul class="apartment-card-list">
+      <li class="apartment-card-item">
+        <picture class="pic">
+          <!-- <source srcset="./images/mobile-img/apartment1.webp 1x, ./images/mobile-img/apartament1.webp 2x"
+            media="(min-width: 1200px)" />
+          <source srcset="./images/mobile-img/apartment1.webp 1x, ./images/mobile-img/apartament1.webp 2x"
+            media="(min-width: 768px)" /> -->
+          <source srcset="images/mobile-img/apartment1.webp 1x, images/mobile-img/apartament1@2x.webp 2x" />
+          <img class="apartment-img" src="./images/mobile-img/apartment1.webp" alt="" width="" height="">
+        </picture>
+        <h3 class="apartment-card-title">Type 1</h3>
+        <p class="apartment-card-text">total area 23 meters</p>
+      </li>
+      <li class="apartment-card-item">
+        <picture class="pic">
+          <source srcset="./images/mobile-img/apartment2.webp 1x, ./images/mobile-img/apartment2_2x.webp 2x"
+            media="(min-width: 360px)" />
+          <!-- <source srcset="img/name 1x, img/name 2x" media="(min-width: 768px)" />
+          <source srcset="img/name 1x, img/name 2x" media="(min-width: 1200px)" /> -->
+          <img class="apartment-img" src="./images/mobile-img/apartment2.webp" alt="" width="" height="">
+        </picture>
+        <h3 class="apartment-card-title">Type 2</h3>
+        <p class="apartment-card-text">total area 27 meters</p>
+      </li>
+      <li class="apartment-card-item">
+        <picture class="pic">
+          <source srcset="./images/mobile-img/apartment3.webp 1x, ./images/mobile-img/apartment3_x2.webp 2x"
+            media="(min-width: 360px)" />
+          <!-- <source srcset="img/name 1x, img/name 2x" media="(min-width: 768px)" />
+          <source srcset="img/name 1x, img/name 2x" media="(min-width: 1200px)" /> -->
+          <img class="apartment-img" src="./images/mobile-img/apartment3.webp" alt="" width="" height="">
+        </picture>
+        <h3 class="apartment-card-title">Type 3</h3>
+        <p class="apartment-card-text">total area 31 meters</p>
+      </li>
+    </ul>
+    <div class="ap-btn-box"><button class="apartment-btn">Download catalog</button></div>
+  </section>
+  <!-- <section class="infrastructure">
+      <h2 class="infrastructure-title">Infrastructure</h2>
+      <ul class="infrastructure-list">
+        <li class="infrastructure-item">
+          <p class="infrastructure-circletext">2 minutes walk</p>
+          <p class="infrastructure-text">to the supermarket</p>
+        </li>
+        <li class="infrastructure-item">
+          <p class="infrastructure-text">to the coffe shop</p>
+          <p class="infrastructure-circletext">4 minutes walk</p>
+        </li>
+        <li class="infrastructure-item">
+          <p class="infrastructure-circletext">7 minutes walk</p>
+          <p class="infrastructure-text">to the nearest park</p>
+        </li>
+      </ul>
+    </section>
+    <section class="gallery">
+      <div class="slider"></div>
+    </section>
+    <section class="contact">
+      <h2 class="contact-title">Get in touch!</h2>
+      <p class="contact-text">Contact us for a quote.</p>
+      <div class="contact-box">
+        <ul class="contact-list">
+          <li class="contact-item">
+            <svg class="contact-icon">
+
+              <use href="img/symbol-defs.svg#icon-map"></use>
+            </svg>
+            <p class="contact-item-text">4517 Washington Ave.</p>
           </li>
-          <li class="apartment-card-item">
-            <!-- <picture>
-            <source srcset="img/name 1x, img/name 2x" media="(min-width: 360px)" />
-            <source srcset="img/name 1x, img/name 2x" media="(min-width: 768px)" />
-            <source srcset="img/name 1x, img/name 2x" media="(min-width: 1200px)" />
-            <img class="apartment-img" src="" alt="" width="" height="">
-          </picture> -->
-            <h3 class="apartment-card-title">Type 2</h3>
-            <p class="apartment-card-text">total area 27 meters</p>
+          <li class="contact-item">
+            <svg class="contact-icon">
+
+              <use href="img/symbol-defs.svg#icon-email"></use>
+
+            </svg>
+            <p class="contact-item-text">willie.jennings@example.com</p>
           </li>
-          <li class="apartment-card-item">
-            <!-- <picture>
-            <source srcset="img/name 1x, img/name 2x" media="(min-width: 360px)" />
-            <source srcset="img/name 1x, img/name 2x" media="(min-width: 768px)" />
-            <source srcset="img/name 1x, img/name 2x" media="(min-width: 1200px)" />
-            <img class="apartment-img" src="" alt="" width="" height="">
-          </picture> -->
-            <h3 class="apartment-card-title">Type 3</h3>
-            <p class="apartment-card-text">total area 31 meters</p>
+          <li class="contact-item">
+            <svg class="contact-icon">
+
+              <use href="img/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <p class="contact-item-text">(+33)7 00 55 54 79</p>
           </li>
         </ul>
-        <button class="apartment-btn">Download catalog</button>
-      </section>
-      <section class="infrastructure">
-        <h2 class="infrastructure-title">Infrastructure</h2>
-        <ul class="infrastructure-list">
-          <li class="infrastructure-item">
-            <p class="infrastructure-circletext">2 minutes walk</p>
-            <p class="infrastructure-text">to the supermarket</p>
-          </li>
-          <li class="infrastructure-item">
-            <p class="infrastructure-text">to the coffe shop</p>
-            <p class="infrastructure-circletext">4 minutes walk</p>
-          </li>
-          <li class="infrastructure-item">
-            <p class="infrastructure-circletext">7 minutes walk</p>
-            <p class="infrastructure-text">to the nearest park</p>
-          </li>
-        </ul>
-      </section>
-      <section class="gallery">
-        <div class="slider"></div>
-      </section>
-      <section class="contact">
-        <h2 class="contact-title">Get in touch!</h2>
-        <p class="contact-text">Contact us for a quote.</p>
-        <div class="contact-box">
-          <ul class="contact-list">
-            <li class="contact-item">
-              <svg class="contact-icon">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h3 class="footer-nav-title">Navigation</h3>
+    <ul class="footer-nav-list">
+      <li class="footer-nav-item">Home</li>
+      <li class="footer-nav-item">About</li>
+      <li class="footer-nav-item">Apartments</li>
+      <li class="footer-nav-item">Infrastructure</li>
+      <li class="footer-nav-item">Gallery</li>
+    </ul>
+    <h3 class="footer-contacts-title">Contacts</h3>
+    <ul class="footer-contacts-list">
+      <li class="footer-contacts-item">(406) 555-0120</li>
+      <li class="footer-contacts-item">
+        ul. Chodkiewicza Karola 111, Chorzów
+      </li>
+      <li class="footer-contacts-item">deanna.curtis@example.com</li>
+    </ul>
+    <ul class="footer-icon-list">
+      <li class="footer-icon-item">
+        <svg class="footer-icon">
 
-                <use href="img/symbol-defs.svg#icon-map"></use>
-              </svg>
-              <p class="contact-item-text">4517 Washington Ave.</p>
-            </li>
-            <li class="contact-item">
-              <svg class="contact-icon">
+          <use href="img/symbol-defs.svg#icon-youtube"></use>
 
-                <use href="img/symbol-defs.svg#icon-email"></use>
+        </svg>
+      </li>
+      <li class="footer-icon-item">
+        <svg class="footer-icon">
 
-              </svg>
-              <p class="contact-item-text">willie.jennings@example.com</p>
-            </li>
-            <li class="contact-item">
-              <svg class="contact-icon">
+          <use href="img/symbol-defs.svg#icon-instagram"></use>
+        </svg>
+      </li>
+      <li class="footer-icon-item">
+        <svg class="footer-icon">
 
-                <use href="img/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              <p class="contact-item-text">(+33)7 00 55 54 79</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <h3 class="footer-nav-title">Navigation</h3>
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item">Home</li>
-        <li class="footer-nav-item">About</li>
-        <li class="footer-nav-item">Apartments</li>
-        <li class="footer-nav-item">Infrastructure</li>
-        <li class="footer-nav-item">Gallery</li>
-      </ul>
-      <h3 class="footer-contacts-title">Contacts</h3>
-      <ul class="footer-contacts-list">
-        <li class="footer-contacts-item">(406) 555-0120</li>
-        <li class="footer-contacts-item">
-          ul. Chodkiewicza Karola 111, Chorzów
-        </li>
-        <li class="footer-contacts-item">deanna.curtis@example.com</li>
-      </ul>
-      <ul class="footer-icon-list">
-        <li class="footer-icon-item">
-          <svg class="footer-icon">
+          <use href="img/symbol-defs.svg#icon-twitter"></use>
 
-            <use href="img/symbol-defs.svg#icon-youtube"></use>
+        </svg>
+      </li>
+      <li class="footer-icon-item">
+        <svg class="footer-icon">
 
-          </svg>
-        </li>
-        <li class="footer-icon-item">
-          <svg class="footer-icon">
+          <use href="img/symbol-defs.svg#icon-facebook"></use>
 
-            <use href="img/symbol-defs.svg#icon-instagram"></use>
-          </svg>
-        </li>
-        <li class="footer-icon-item">
-          <svg class="footer-icon">
+        </svg>
+      </li>
+    </ul>
+    <p class="footer-policy">
+      By using this website, you agree to the
+      <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+    </p>
+  </footer> -->
+</body>
 
-            <use href="img/symbol-defs.svg#icon-twitter"></use>
-
-          </svg>
-        </li>
-        <li class="footer-icon-item">
-          <svg class="footer-icon">
-
-            <use href="img/symbol-defs.svg#icon-facebook"></use>
-
-          </svg>
-        </li>
-      </ul>
-      <p class="footer-policy">
-        By using this website, you agree to the
-        <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
-      </p>
-    </footer>
-  </body>
 </html>
