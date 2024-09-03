@@ -12,12 +12,20 @@
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-
   </head>
 
   <body>
     <header class="header">
-      <a href="#" class="logo"></a>
+      <!-- <svg class="logo">
+        <use href="./img/symbol-defs.svg#"></use>
+      </svg> -->
+
+      <button class="button-open-menu">
+        <svg class="open-menu">
+          <use href="./img/symbol-defs.svg#true"></use>
+        </svg>
+      </button>
+
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#">Home</a></li>
@@ -28,49 +36,40 @@
           <li class="nav-item"><a href="#">Contacts</a></li>
         </ul>
       </nav>
+      <button class="header-button">Contact us</button>
     </header>
     <main>
-
-      <include src="./partials/example.html"></include>
-
       <section class="hero">
         <h1 class="hero-title">Nice view</h1>
         <p class="hero-text">For your comfortable life with your family</p>
-        <button class="hero-btn">Contact us</button>
+        <div>
+          <button class="hero-btn">Contact us</button>
+        </div>
       </section>
+
       <section class="philosophy">
         <ul class="philosophy-card-list">
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
-       
-
-              <use href="img/symbol-defs.svg#icon-Vector"> </use>
-
+              <use href="img/symbol-defs.svg#icon-Vector"></use>
             </svg>
             <p class="philosophy-card-text">15 years of experience</p>
           </li>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
               <use href="img/symbol-defs.svg#iconoirgraph"></use>
-
             </svg>
             <p class="philosophy-card-text">30 thousand happy residents</p>
           </li>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
               <use href="img/symbol-defs.svg#icon-home"></use>
-
             </svg>
             <p class="philosophy-card-text">22 houses built</p>
           </li>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
               <use href="img/symbol-defs.svg#icon-Frame"></use>
-
             </svg>
             <p class="philosophy-card-text">9 awards</p>
           </li>
@@ -82,16 +81,41 @@
           measured life in the very center of the city.
         </p>
       </section>
+
       <section class="apartment">
         <h2 class="apartment">Choose your apartment</h2>
         <ul class="apartment-card-list">
           <li class="apartment-card-item">
             <picture>
-            <source srcset="./images/mobile-img/apartment1.webp 1x,  ./images/mobile-img/apartment1.webp 2x" media="(min-width: 360px)" />
-            <source srcset="./images/mobile-img/apartment1.webp 1x, ./images/mobile-img/apartment1.webp 2x" media="(min-width: 768px)" />
-            <source srcset="./images/mobile-img/apartment1.webp 1x, ./images/mobile-img/apartment1.webp 2x" media="(min-width: 1200px)" />
-            <img class="apartment-img" src="./images/mobile-img/apartment1.webp" alt="" width="" height="">
-          </picture>
+              <source
+                srcset="
+                  ./images/mobile-img/apartment1.webp 1x,
+                  ./images/mobile-img/apartment1.webp 2x
+                "
+                media="(min-width: 360px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile-img/apartment1.webp 1x,
+                  ./images/mobile-img/apartment1.webp 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile-img/apartment1.webp 1x,
+                  ./images/mobile-img/apartment1.webp 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                class="apartment-img"
+                src="./images/mobile-img/apartment1.webp"
+                alt=""
+                width=""
+                height=""
+              />
+            </picture>
             <h3 class="apartment-card-title">Type 1</h3>
             <p class="apartment-card-text">total area 23 meters</p>
           </li>
@@ -118,6 +142,7 @@
         </ul>
         <button class="apartment-btn">Download catalog</button>
       </section>
+
       <section class="infrastructure">
         <h2 class="infrastructure-title">Infrastructure</h2>
         <ul class="infrastructure-list">
@@ -135,9 +160,11 @@
           </li>
         </ul>
       </section>
+
       <section class="gallery">
         <div class="slider"></div>
       </section>
+
       <section class="contact">
         <h2 class="contact-title">Get in touch!</h2>
         <p class="contact-text">Contact us for a quote.</p>
@@ -145,22 +172,18 @@
           <ul class="contact-list">
             <li class="contact-item">
               <svg class="contact-icon">
-
                 <use href="img/symbol-defs.svg#icon-map"></use>
               </svg>
               <p class="contact-item-text">4517 Washington Ave.</p>
             </li>
             <li class="contact-item">
               <svg class="contact-icon">
-
                 <use href="img/symbol-defs.svg#icon-email"></use>
-
               </svg>
               <p class="contact-item-text">willie.jennings@example.com</p>
             </li>
             <li class="contact-item">
               <svg class="contact-icon">
-
                 <use href="img/symbol-defs.svg#icon-phone"></use>
               </svg>
               <p class="contact-item-text">(+33)7 00 55 54 79</p>
@@ -169,6 +192,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <h3 class="footer-nav-title">Navigation</h3>
       <ul class="footer-nav-list">
@@ -189,29 +213,22 @@
       <ul class="footer-icon-list">
         <li class="footer-icon-item">
           <svg class="footer-icon">
-
             <use href="img/symbol-defs.svg#icon-youtube"></use>
-
           </svg>
         </li>
         <li class="footer-icon-item">
           <svg class="footer-icon">
-
             <use href="img/symbol-defs.svg#icon-instagram"></use>
           </svg>
         </li>
         <li class="footer-icon-item">
           <svg class="footer-icon">
-
             <use href="img/symbol-defs.svg#icon-twitter"></use>
-
           </svg>
         </li>
         <li class="footer-icon-item">
           <svg class="footer-icon">
-
             <use href="img/symbol-defs.svg#icon-facebook"></use>
-
           </svg>
         </li>
       </ul>
