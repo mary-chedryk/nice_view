@@ -1,17 +1,70 @@
-.philosophy-card-text {
-    color: #7E6D53;
-font-family: Poppins;
-font-size: 16px;
-font-weight: 400;
-
+.philosophy {
+  background-image: url(../images/mobile-img/mobile-philosophy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 677px;
 }
 
-@media screen and (min-width: 480px) {
-    
+.philosophy-box1 {
+  background: #EDE9E3;
+  height: 100px;
+}
+
+.philosophy-box2 {
+  opacity: 0.9;
+  background: #FCFCFB;
+  height: 398px;
+}
+
+.philosophy-card1 {
+  margin-right: 20px;
+}
+
+.philosophy-card-text {
+  color: #7E6D53;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.philosophy-card-list {
+  display: flex;
+}
+
+.philosophy-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.philosophy-title {
+  color: #2D2A22;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.philosophy-text {
+  color: #7E6D53;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 768px) {
+  .philosophy-box2 {
+    display: flex;
+    padding-top: 40px;
   }
-  @media screen and (min-width: 768px) {
-    
+  
+  .philosophy-title {
+    font-size: 24px;
   }
-  @media screen and (min-width: 1200px) {
-    
+
+  .philosophy-text {
+    font-size: 16px;
+    width: 336px;
   }
+}
+
+@media screen and (min-width: 1200px) {}
