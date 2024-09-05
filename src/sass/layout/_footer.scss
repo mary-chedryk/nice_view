@@ -1,0 +1,70 @@
+.footer{
+    background: linear-gradient(269deg, #2D2A22 20.66%, #564C3B 52.94%, #7E6D53 85.22%);
+    padding-top: 20px;
+}
+
+.first-box{
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    margin-bottom: 29px;
+}
+
+.footer-nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-nav-item{
+    color: #FFF;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.footer-nav-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.footer-contacts-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 135px;
+}
+
+.footer-contacts-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 16px;
+}
+
+.footer-contacts-item{
+    color: #FFFEFE;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.footer-icon-list{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icon{
+    fill: #FFF;
+}
