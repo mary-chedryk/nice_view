@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nice View</title>
+  <link rel="stylesheet" href="sass/index.scss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet" />
 
-    <title>Nice View</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+</head>
 
-  <body>
-    <header class="header">
-      <!-- <svg class="logo">
-        <use href="./img/symbol-defs.svg#"></use>
-      </svg> -->
+<body>
+  <header class="header">
+    <a href="#" class="logo"></a>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Apartments</a></li>
+        <li class="nav-item"><a href="#">Infrastructure</a></li>
+        <li class="nav-item"><a href="#">Gallery</a></li>
+        <li class="nav-item"><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
 
-      <button class="button-open-menu">
-        <svg class="open-menu">
-          <use href="./img/symbol-defs.svg#true"></use>
-        </svg>
-      </button>
+    <include src="./partials/example.html"></include>
 
-      <nav class="header-nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Apartments</a></li>
-          <li class="nav-item"><a href="#">Infrastructure</a></li>
-          <li class="nav-item"><a href="#">Gallery</a></li>
-          <li class="nav-item"><a href="#">Contacts</a></li>
-        </ul>
-      </nav>
-      <button class="header-button">Contact us</button>
-    </header>
-    <main>
-      <section class="hero">
-        <h1 class="hero-title">Nice view</h1>
-        <p class="hero-text">For your comfortable life with your family</p>
+    <section class="hero">
+      <h1 class="hero-title">Nice view</h1>
+      <p class="hero-text">For your comfortable life with your family</p>
+      <button class="hero-btn">Contact us</button>
+    </section>
+
+  <div class="philosophy-box1"></div>
+  <section class="philosophy">
+    <div class="philosophy-box2 container">
+      <ul class="philosophy-card-list">
         <div>
-          <button class="hero-btn">Contact us</button>
-        </div>
-      </section>
-
-      <section class="philosophy">
-        <ul class="philosophy-card-list">
-          <li class="philosophy-card-item">
+          <li class="philosophy-card-item philosophy-card1">
             <svg class="philosophy-icon">
-              <use href="img/symbol-defs.svg#icon-Vector"></use>
-
-
+              <use href="img/symbol-defs.svg#suitcase"> </use>
             </svg>
             <p class="philosophy-card-text">15 years of experience</p>
           </li>
           <li class="philosophy-card-item philosophy-card1">
             <svg class="philosophy-icon">
-
-              <use href="img/symbol-defs.svg#icon-home"></use>
-
+              <use href="img/symbol-defs.svg#home"></use>
             </svg>
             <p class="philosophy-card-text">22 houses built</p>
           </li>
@@ -70,15 +59,13 @@
         <div>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-
-              <use href="img/symbol-defs.svg#icon-iconoirgraph"></use>
-
+              <use href="img/symbol-defs.svg#graph"></use>
             </svg>
             <p class="philosophy-card-text">30 thousand happy residents</p>
           </li>
           <li class="philosophy-card-item">
             <svg class="philosophy-icon">
-              <use href="img/symbol-defs.svg#icon-Frame"></use>
+              <use href="img/symbol-defs.svg#start"></use>
             </svg>
             <p class="philosophy-card-text">9 awards</p>
           </li>
@@ -91,7 +78,6 @@
           and comfort. In our project, we created the opportunity to lead a
           measured life in the very center of the city.
         </p>
-
       </div>
     </div>
     </p>

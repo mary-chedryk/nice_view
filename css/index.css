@@ -20,12 +20,31 @@
   }
 }
 
-ul {
-  list-style: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+main,
+body,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 a {
@@ -65,7 +84,7 @@ body {
 }
 
 .philosophy {
-  background-image: url(../src/images/mobile-img/mobile-philosophy.png);
+  background-image: url(../images/mobile-img/mobile-philosophy.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -98,11 +117,18 @@ body {
 
 .philosophy-card-list {
   display: flex;
+  padding-top: 20px;
+}
+
+.philosophy-card-item {
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .philosophy-icon {
   width: 32px;
   height: 32px;
+  margin-bottom: 20px;
 }
 
 .philosophy-title {
@@ -118,6 +144,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .philosophy {
+    background-image: url(../images/tablet-img/philosophy.webp);
+  }
   .philosophy-box2 {
     display: flex;
     padding-top: 40px;
