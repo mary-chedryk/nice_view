@@ -59,6 +59,27 @@ img {
 }
 
 body {
+
+  margin: 0;
+}
+
+body {
+  font-family: Poppins;
+}
+
+.header {
+  background: linear-gradient(278deg, #2d2a22 -29.32%, #7e6d53 119.87%);
+  display: flex;
+  height: 80px;
+  padding: 26px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 220px;
+}
+
+.nav-list {
+  display: none;
+
   font-family: Poppins;
 }
 
@@ -83,6 +104,7 @@ body {
 
 .philosophy-card1 {
   margin-right: 20px;
+
 }
 
 .philosophy-card-text {
@@ -90,6 +112,7 @@ body {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 400;
+
 }
 
 .philosophy-card-list {
