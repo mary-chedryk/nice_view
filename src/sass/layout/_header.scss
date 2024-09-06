@@ -1,0 +1,141 @@
+.header {
+  background: linear-gradient(278deg, #2d2a22 -29.32%, #7e6d53 119.87%);
+  display: flex;
+  height: 80px;
+  padding: 26px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 220px;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
+}
+
+.button-open-menu {
+  border: none;
+  background: none;
+}
+
+.open-menu {
+  border: none;
+  background: none;
+  width: 36px;
+  height: 28px;
+}
+
+.header-nav {
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-item {
+}
+
+.header-button {
+  display: none;
+}
+///////////////////////// tablet////////////////////
+@media screen and (min-width: 768px) {
+  .header {
+    background: var(
+      --header,
+      linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%)
+    );
+    display: flex;
+    height: 80px;
+    padding: 26px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+  }
+
+  .logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button-open-menu {
+    display: none;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .header-nav {
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  .nav-item {
+    color: var(--button-background, #fcfcfb);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .header-button {
+    display: none;
+  }
+}
+///////////////////////// desktop////////////////////
+@media screen and (min-width: 1200px) {
+  .header {
+    background: var(
+      --header,
+      linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%)
+    );
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .button-open-menu {
+    display: none;
+  }
+
+  .open-menu {
+    display: none;
+  }
+
+  .header-nav {
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 48px;
+  }
+
+  .nav-item {
+    color: var(--button-background, #fcfcfb);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .header-button {
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #fcfcfb;
+    background: #2e2b23;
+    padding: 4px 29px;
+
+    color: #fcfcfb;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

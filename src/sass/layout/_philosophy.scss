@@ -6,11 +6,6 @@
   height: 677px;
 }
 
-.philosophy-box1 {
-  background: #EDE9E3;
-  height: 100px;
-}
-
 .philosophy-box2 {
   opacity: 0.9;
   background: #FCFCFB;
@@ -30,11 +25,18 @@
 
 .philosophy-card-list {
   display: flex;
+  padding-top: 20px;
+}
+
+.philosophy-card-item {
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 
 .philosophy-icon {
   width: 32px;
   height: 32px;
+  margin-bottom: 20px;
 }
 
 .philosophy-title {
@@ -49,14 +51,18 @@
   font-weight: 300;
 }
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 320px) {}
 
 @media screen and (min-width: 768px) {
+  .philosophy {
+    background-image: url(../images/tablet-img/philosophy.webp);
+  }
+
   .philosophy-box2 {
     display: flex;
     padding-top: 40px;
   }
-  
+
   .philosophy-title {
     font-size: 24px;
   }
