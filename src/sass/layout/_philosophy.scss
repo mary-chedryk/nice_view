@@ -33,6 +33,7 @@
 .philosophy-card-item {
   padding-right: 20px;
   padding-bottom: 20px;
+  width: calc((100% - 20px * 2) / 2);
 }
 
 .philosophy-icon {
