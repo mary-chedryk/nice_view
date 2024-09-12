@@ -1,0 +1,140 @@
+.hero {
+  height: 720px;
+  background-image: url(/src/images/mobile-img/mobile-hero2x.png);
+  background-color: #141416;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-title {
+  color: var(--text-of-pages, #7e6d53);
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.hero-text {
+  color: var(--text-of-pages, #7e6d53);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  width: 184px;
+}
+
+.hero-btn {
+  color: var(--button-text, #2d2a22);
+  font-family: Poppins;
+  font-size: 20px;
+
+  margin-top: 246px;
+  display: flex;
+  padding: 8px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #fcfcfb;
+  border: none;
+}
+
+///////////////////////// tablet////////////////////
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 720px;
+    background-image: url(/src/images/tablet-img/hero_2x.webp);
+    background-color: #141416;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    color: var(--text-of-pages, #7e6d53);
+    font-family: Poppins;
+    font-size: 72px;
+    font-weight: 400;
+    margin-top: 32px;
+  }
+
+  .hero-text {
+    color: var(--text-of-pages, #7e6d53);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+    width: auto;
+  }
+
+  .hero-btn {
+    color: var(--button-text, #2d2a22);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+
+    margin-top: 353px;
+    display: flex;
+    padding: 8px 38px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: #fcfcfb;
+    border: none;
+  }
+}
+
+///////////////////////// desktop////////////////////
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 720px;
+    background-image: url(/src/images/desktop-img/hero_2x.webp);
+    background-color: #141416;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    color: var(--text-of-pages, #7e6d53);
+    font-family: Poppins;
+    font-size: 72px;
+    font-weight: 400;
+    margin-top: 32px;
+  }
+
+  .hero-text {
+    color: var(--text-of-pages, #7e6d53);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+    width: auto;
+  }
+
+  .hero-btn {
+    color: var(--button-text, #2d2a22);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+
+    margin-top: 353px;
+    display: flex;
+    padding: 8px 38px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    background: #fcfcfb;
+    border: none;
+  }
+}
