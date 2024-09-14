@@ -1,28 +1,12 @@
 .header {
-  background: linear-gradient(278deg, #2d2a22 -29.32%, #7e6d53 119.87%);
-  display: flex;
+  background-image: linear-gradient(278deg, #2d2a22 -29.32%, #7e6d53 119.87%);
   height: 80px;
   padding: 26px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 220px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-  width: 24px;
-  height: 24px;
-}
-
-.button-open-menu {
-  border: none;
-  background: none;
-}
-
-.open-menu {
-  border: none;
-  background: none;
-  width: 36px;
-  height: 28px;
 }
 
 .header-nav {
@@ -35,27 +19,30 @@
 .nav-item {
 }
 
-.header-button {
+.open-menu {
+  width: 24px;
+  height: 24px;
+  fill: papayawhip;
+}
+
+.header-btn {
   display: none;
 }
 ///////////////////////// tablet////////////////////
 @media screen and (min-width: 768px) {
   .header {
-    background: var(
-      --header,
-      linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%)
-    );
+    background-image: linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%);
     display: flex;
     height: 80px;
     padding: 26px 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 220px;
   }
 
   .logo {
-    width: 24px;
-    height: 24px;
+    margin-top: 0;
+    width: 56px;
+    height: 56px;
   }
 
   .button-open-menu {
@@ -71,7 +58,6 @@
 
   .nav-list {
     display: flex;
-    gap: 32px;
   }
 
   .nav-item {
@@ -79,9 +65,14 @@
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
+    padding-right: 32px;
+
+    &:hover {
+      color: #ad977a;
+    }
   }
 
-  .header-button {
+  .header-btn {
     display: none;
   }
 }
@@ -94,13 +85,14 @@
     );
     display: flex;
     height: 80px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
   .logo {
-    width: 24px;
-    height: 24px;
+    margin-top: 0;
+    width: 56px;
+    height: 56px;
   }
 
   .button-open-menu {
@@ -124,14 +116,22 @@
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
+
+    &:hover {
+      color: #ad977a;
+    }
   }
 
-  .header-button {
-    display: block;
+  .header-btn {
+    display: flex;
+    height: 40px;
+    padding: 4px 29px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     border-radius: 8px;
     border: 1px solid #fcfcfb;
     background: #2e2b23;
-    padding: 4px 29px;
 
     color: #fcfcfb;
     font-family: Poppins;
