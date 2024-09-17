@@ -1,3 +1,83 @@
-<section class="gallery">
-    <div class="slider"></div>
+<section class="gallery container">
+  <h2 class="gallery-title">Gallery</h2>
+  <div class="slide-box">
+    <div class="slideshow-container">
+
+        <div class="mySlides-box">
+            <div class="mySlides fade">
+                <picture>
+                  <source srcset="./images/desktop-img/gallery1.webp 1x, ./images/desktop-img/gallery1_2x.webp 2x"
+                    media="(min-width: 1200px)" />
+                  <source srcset="./images/tablet-img/gallery1.webp 1x, ./images/tablet-img/gallery1_2x.webp 2x"
+                    media="(min-width: 768px)" /> 
+                  <source srcset="./images/mobile-img/gallery1.webp 1x, ./images/mobile-img/gallery1_2x.webp 2x" />
+                  <img class="apartment-img" src="./images/desktop-img/gallery1.webp" alt="apartment" width="" height="">
+                </picture>
+            </div>
+        </div>
+
+        <div class="mySlides-box">
+            <div class="mySlides fade">
+              <picture>
+                <source srcset="./images/desktop-img/gallery2.webp 1x, ./images/desktop-img/gallery2_2x.webp 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./images/tablet-img/gallery2.webp 1x, ./images/tablet-img/gallery2_2x.webp 2x"
+                  media="(min-width: 768px)" /> 
+                <source srcset="./images/mobile-img/gallery2.webp 1x, ./images/mobile-img/gallery2_2x.webp 2x" />
+                <img class="apartment-img" src="./images/desktop-img/gallery2.webp" alt="apartment" width="" height="">
+              </picture>
+            </div>
+        </div>
+
+        <div class="mySlides-box">
+            <div class="mySlides fade">
+              <picture>
+                <source srcset="./images/desktop-img/gallery3.webp 1x, ./images/desktop-img/gallery3_2x.webp 2x"
+                  media="(min-width: 1200px)" />
+                <source srcset="./images/tablet-img/gallery3.webp 1x, ./images/tablet-img/gallery3_2x.webp 2x"
+                  media="(min-width: 768px)" /> 
+                <source srcset="./images/mobile-img/gallery3.webp 1x, ./images/mobile-img/gallery3_2x.webp 2x" />
+                <img class="apartment-img" src="./images/desktop-img/gallery3.webp" alt="apartment" width="" height="">
+              </picture>            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
+
   </section>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>

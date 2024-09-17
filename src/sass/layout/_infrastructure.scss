@@ -3,10 +3,13 @@
     flex-direction: column; 
     font-family: Poppins, sans-serif;
    
+    font-family: Poppins, sans-serif;
+   
   } 
    
   .infrastructure-title { 
     color: var(--text-of-pages, #7e6d53); 
+    font-size: 28px;
     font-size: 28px;
     font-weight: 500; 
     align-self: start; 
@@ -86,7 +89,7 @@
       font-size: 16px;
       font-weight: 400px;
     }
-    .infrastructure-item {
+    .infrastructure-item:not(:first-child) {
       margin-top: 60px; 
     }
 
@@ -109,7 +112,6 @@
       width: 331px;
       height: 470px;
       right: 186px;
-      top: 0px;
     }
     .infrastructure-circletext {
       font-size: 16px;
@@ -119,9 +121,6 @@
       font-weight: 400px;
     }
 
-    .infrastructure-item {
-      margin-top: 60px; 
-    }
    }
 
   .infrastructure-item { 
