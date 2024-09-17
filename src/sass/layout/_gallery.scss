@@ -6,49 +6,80 @@
         padding-top: 60px;
         padding-bottom: 24px;
     }
-    .gallery-box {
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        align-items: center;
-        justify-content: center;
-      }
 
-    .cell {  
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        font-size: 26px;
-        font-weight: 500;
-        color: rgba(0,0,0,0.87);
-        color: rgba(0,0,0,0.92);
-        user-select: none;  
+    .slide-box {
+        padding-bottom: 100px;
+    }
+
+    .mySlides-box {
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: center;    
-        background: #eee;
-        
-        height: 100%;
-        transform-origin: center bottom;
-      }
-    
-      
-      .picker {
+    }
+
+    .slideshow-container {
+        max-width: 1000px;
         position: relative;
-        overflow: hidden;  
-        width: 80vw; //225px;
-        height: 90vh;
-        border-radius: 2px;
-        background-color: #fff;  
-        box-shadow: 
-          0 2px 4px -1px rgba(0,0,0,.2), 
-          0 4px 5px 0 rgba(0,0,0,.14), 
-          0 1px 10px 0 rgba(0,0,0,.12);
-      }
+        margin: auto;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        margin-top: 10px;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #C4C4C4;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
 
 
     @media screen and (min-width: 320px) {}
