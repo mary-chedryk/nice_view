@@ -1,90 +1,89 @@
 .gallery {
-    .gallery-title {
-        color: #7E6D53;
-        font-size: 40px;
-        font-weight: 500;
-        padding-top: 60px;
-        padding-bottom: 24px;
-    }
-
-    .slide-box {
-        padding-bottom: 100px;
-    }
-
-    .mySlides-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        margin: auto;
-    }
-
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .dot {
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-        margin: 0 2px;
-        background-color: #C4C4C4;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-        margin-top: 10px;
-    }
-
-    .active,
-    .dot:hover {
-        background-color: #C4C4C4;
-    }
-
-    .fade {
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @keyframes fade {
-        from {
-            opacity: .4
-        }
-
-        to {
-            opacity: 1
-        }
-    }
 
 
     @media screen and (min-width: 320px) {}
 
+    display: none;
+
     @media screen and (min-width: 768px) {}
 
-    @media screen and (min-width: 1200px) {}
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+
+        .gallery-title {
+            color: #7E6D53;
+            font-size: 40px;
+            font-weight: 500;
+            padding-top: 60px;
+            padding-bottom: 24px;
+        }
+
+        .splide {
+            /* margin-top: 300px; */
+            height: 600px;
+        }
+
+        /* Базові стилі слайдів */
+        .splide__slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            height: 500px;
+            width: 1144px;
+            /* margin: 0 5px; */
+        }
+
+        /* Альтернативно, якщо використовуєте flexbox, можна використовувати gap */
+        .splide__list {
+            display: flex;
+            /* Якщо не використовується за замовчуванням */
+            gap: 5px;
+            /* Встановіть бажане значення */
+        }
+
+        /* Масштабування активного слайду */
+        .splide__slide.is-active img {
+            /* width: 50%; */
+            transform: scale(2.5, 1.5);
+            /* Збільшення на 50% */
+        }
+
+        /* Стилі для зображень */
+        .splide__slide img {
+            width: 196px;
+            height: 346px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Стилі для пагінації */
+        .splide:not(.is-overflow) .splide__pagination {
+            display: flex;
+        }
+
+        .splide__pagination {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .splide__pagination__page {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #f1e8e8;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Стиль активної пагінації */
+        .splide__pagination__page.is-active {
+            background-color: #C4C4C4;
+            /* Колір активної крапочки */
+        }
+    }
 }
