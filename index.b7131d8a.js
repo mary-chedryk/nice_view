@@ -1,0 +1,2 @@
+const e=document.querySelector("[data-action='open-modal-contact']"),t=document.querySelector("[data-action='close-modal-contact']"),o=document.querySelector(".backdrop"),c=document.querySelector("body");e.addEventListener("click",(()=>{c.classList.toggle("show-modal")})),t.addEventListener("click",(()=>{c.classList.remove("show-modal")})),o.addEventListener("click",(()=>{event.target===BACKDROP&&c.classList.remove("show-modal")}));
+//# sourceMappingURL=index.b7131d8a.js.map
