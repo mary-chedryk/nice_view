@@ -1,12 +1,15 @@
 .header {
   background-image: linear-gradient(278deg, #2d2a22 -29.32%, #7e6d53 119.87%);
-  height: 80px;
-  padding: 26px 20px;
+  padding: 22px 32px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
+  width: 56px;
+  height: 56px;
+  color: white;
 }
 
 .header-nav {
@@ -40,7 +43,6 @@
   }
 
   .logo {
-    margin-top: 0;
     width: 56px;
     height: 56px;
   }
