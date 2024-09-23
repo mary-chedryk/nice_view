@@ -1,0 +1,83 @@
+.modal {
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    left: 400;
+    top: 200;
+    width: 100%;
+    background: #FCFCFB;
+
+
+    .modal-content {
+        margin: auto;
+        border-radius: 4px;
+        background: #FCFCFB;
+
+        .close {
+            border-radius: 100%;
+            float: right;
+            margin: 6px;
+            width: 30px;
+            height: 30px;
+            background: white;
+        }
+
+        .svg-close {
+            padding-top: 5px;
+            padding-right: 5px;
+            fill: #000000;
+        }
+
+        .apt-modal-title {
+            color: #2D2A22;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .modal-box {
+            display: flex;
+            padding-top: 32px;
+        }
+
+        .area-text {
+            color: #2D2A22;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .size-text {
+            color: #7E6D53;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .price-text {
+            color: #2D2A22;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .modal-box2 {
+            padding-left: 50px;
+        }
+
+        .apt-modal-btn {
+            padding: 14px 76px;
+            border-radius: 8px;
+            background: #7E6D53;
+            color: #FCFCFB;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: Poppins;
+            border: none;
+            margin-top: 30px;
+        }
+    }
+
+    @media screen and (min-width: 360px) {}
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+}
