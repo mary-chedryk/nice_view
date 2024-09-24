@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector("[data-action='open-modal-contact']"),t=document.querySelector("[data-action='close-modal-contact']"),o=document.querySelector(".backdrop"),c=document.querySelector("body");e.addEventListener("click",(function(){c.classList.toggle("show-modal")})),t.addEventListener("click",(function(){c.classList.remove("show-modal")})),o.addEventListener("click",(function(){event.target===BACKDROP&&c.classList.remove("show-modal")}))}();
-//# sourceMappingURL=index.5e3cc125.js.map
