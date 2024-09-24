@@ -37,11 +37,12 @@
 
   .apartment-card-item {
     margin-bottom: 28px;
+    border-radius: 16px;
+    border: 2px solid transparent;
   }
 
   .apartment-card-item:hover {
-    border-radius: 16px;
-    border: 2px solid #7E6D53;
+    border-color: #7E6D53;
     box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
   }
 
