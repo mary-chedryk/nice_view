@@ -1,0 +1,15 @@
+.modal-done-title {
+display: flex;
+color: #7E6D53;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+justify-content: center;
+margin-right: 222px;
+margin-left: 110px;
+margin-top: 16px;
+}
+.modal-done-title:not(:last-child) {
+    margin-top: 52px;}
