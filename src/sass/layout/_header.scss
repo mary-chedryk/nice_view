@@ -11,15 +11,11 @@
   display: flex;
 }
 
-.header-nav {
-}
 
 .nav-list {
   display: none;
 }
 
-.nav-item {
-}
 
 .open-menu {
   fill: rgb(255, 255, 255);
@@ -53,8 +49,7 @@
     display: none;
   }
 
-  .header-nav {
-  }
+  .header-nav {}
 
   .nav-list {
     display: flex;
@@ -75,17 +70,17 @@
   .header-btn {
     display: none;
   }
+
   .open-menu {
     display: none;
   }
 }
+
 ///////////////////////// desktop////////////////////
 @media screen and (min-width: 1200px) {
   .header {
-    background: var(
-      --header,
-      linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%)
-    );
+    background: var(--header,
+        linear-gradient(269deg, #2d2a22 20.66%, #7e6d53 85.22%));
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -106,8 +101,7 @@
     display: none;
   }
 
-  .header-nav {
-  }
+  .header-nav {}
 
   .nav-list {
     display: flex;

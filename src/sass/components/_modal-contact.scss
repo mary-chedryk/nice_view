@@ -1,29 +1,32 @@
-.modal-form-contact{
+.modal-form-contact {
     display: flex;
     flex-direction: column;
 }
 
-.modal-title{
-color: #35322D;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+.modal-title {
+    color: #35322D;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
-.modal-label{
+
+.modal-label {
     display: flex;
     flex-direction: column;
     margin-bottom: 28px;
 }
-.modal-input{
+
+.modal-input {
     width: 280px;
-height: 50px;
-border-radius: 16px;
-border: 1px solid #35322D;
-background: #FCFCFB;
-padding: 16px;
+    height: 50px;
+    border-radius: 16px;
+    border: 1px solid #35322D;
+    background: #FCFCFB;
+    padding: 16px;
 }
+
 .btn-box{
     display: flex;
     justify-content: center;
@@ -43,16 +46,19 @@ padding: 16px;
     border-radius: 8px;
     background: #7E6D53;
 }
+
 @media screen and (min-width: 768px) {
 
-    .modal-title{      
+    .modal-title {
         text-align: center;
         font-size: 28px;
     }
-    .modal-form-contact{
+
+    .modal-form-contact {
         align-items: center;
     }
-    .modal-input{
+
+    .modal-input {
         width: 410px;
         height: 52px;
         border-radius: 16px;
