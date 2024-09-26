@@ -14,6 +14,7 @@ line-height: normal;
 .modal-label{
     display: flex;
     flex-direction: column;
+    margin-bottom: 28px;
 }
 .modal-input{
     width: 280px;
@@ -22,6 +23,25 @@ border-radius: 16px;
 border: 1px solid #35322D;
 background: #FCFCFB;
 padding: 16px;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+}
+.contactus-btn{
+    display: flex;
+    padding: 9px 65px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+    color: #FCFCFB;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 8px;
+    background: #7E6D53;
 }
 @media screen and (min-width: 768px) {
 
@@ -38,6 +58,11 @@ padding: 16px;
         border-radius: 16px;
         border: 1px solid #3A3631;
         background: #FCFCFB;
+    }
+    .contactus-btn{
+        width: 224px;
+        height: 54px;
+        padding: 6px 0px;
     }
 
 }
