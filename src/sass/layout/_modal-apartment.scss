@@ -1,6 +1,6 @@
  .close-modal {
-  border: none; 
-  float: right;
+   border: none;
+   float: right;
    margin: 6px;
    width: 30px;
    height: 30px;
@@ -10,9 +10,6 @@
    right: 10px;
    cursor: pointer;
    font-size: 24px;
-   &:hover {
-     color: red;
-   }
  }
 
  .svg-close {
