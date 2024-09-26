@@ -1,0 +1,24 @@
+.menu {
+  height: 100%;
+  background-image: linear-gradient(337deg, #2d2a22 5.7%, #7e6d53 108.98%);
+}
+
+.close-modal {
+  background: none;
+  fill: white;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 80px;
+}
+
+.menu-item {
+  color: var(--button-background, #fcfcfb);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
